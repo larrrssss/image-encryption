@@ -1,7 +1,5 @@
 # Encrpyt Images
 
-Create a typescript npm package in less than a minute
-
 ## Install
 
 ```sh
