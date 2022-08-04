@@ -3,9 +3,9 @@ import * as crypto from 'crypto';
 /**
  * Encrypt an image buffer with a given secret
  * 
- * @param buffer image buffer
- * @param secret personal token
- * @param algorithm algorithm to use (default: 'aes-256-ctr')
+ * @param buffer - image buffer
+ * @param secret - personal token
+ * @param algorithm - algorithm to use (default: 'aes-256-ctr')
  * @returns encrypted buffer
  */
 export function encrypt(buffer: Buffer, secret: string, algorithm = 'aes-256-ctr'): Buffer {
@@ -25,9 +25,9 @@ export function encrypt(buffer: Buffer, secret: string, algorithm = 'aes-256-ctr
 /**
  * Decrypt an encrypted image buffer if the scret is the right one
  * 
- * @param encrypted encrypted image buffer
- * @param secret personal token
- * @param algorithm algorithm to use (default: 'aes-256-ctr')
+ * @param encrypted - encrypted image buffer
+ * @param secret - personal token
+ * @param algorithm - algorithm to use (default: 'aes-256-ctr')
  * @returns decrypted image buffer
  */
 export function decrypt(encrypted: Buffer, secret: string, algorithm = 'aes-256-ctr'): Buffer {
